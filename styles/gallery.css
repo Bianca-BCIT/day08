@@ -232,6 +232,12 @@ a.site-name {
 		/* Create 3 columns, 300px wide each */
 		grid-template-columns:  18.75rem 18.75rem 18.75rem;
 
+		/* Create 4 columns, 200px wide each */
+		grid-template-columns: repeat(4, 12.5rem);
+
+		/* Make all automatically generated rows 200px height */
+		grid-auto-rows: 12.5rem;
+
 		/* Create 3 columns of equal width to fill the grid container */
 		/*grid-template-columns: 1fr 1fr 1fr;*/
 
@@ -245,7 +251,9 @@ a.site-name {
 		/*grid-template-rows: 12.5rem 12.5rem;*/
 
 		/* Set all the row height based on the content inside the grid items */
-        grid-template-rows: auto auto;
+        /*grid-template-rows: auto auto;*/
+
+		/*grid-template-rows: 10rem 300px auto;*/
 	}
 
 	
